@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "STEDI App",
+    "plugins":[
+      [
+        "expo-build-properties",
+        {
+          "ios":{
+            "deploymentTarget":"13.0"
+          }
+        }
+      ]
+    ],
+    "splash":{
+      "image":"./image/icon-img.png"
+    },
+    "slug": "stedi-app",
+    "icon": "./image/icon-img.png",
+    "extra": {
+      "eas": {
+        "projectId": "6c98bbd5-98a2-482c-a01d-04a045165bcb"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.scmurdock.stediapp"
+    },
+    "android": {
+      "package": "com.scmurdock.stediapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./image/icon-img.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    }
+  }
+}
