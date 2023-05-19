@@ -52,7 +52,7 @@ const getSpikesFromAccelerometer = ({recentAccelerationData, threshold, previous
             //console.log("Previous Value: "+previousValue);
             //console.log("Value: "+accelerationDatum.value);
         } else {
-            console.log('X: '+accelerationDatum.x);
+            //console.log('X: '+accelerationDatum.x);
             if (goingUp===true && (accelerationDatum.time-previousHighPointTime > 600 || previousHighPointTime==0) && previousValue > threshold){
         //console.log("Found spike!");
         //console.log('X: '+accelerationDatum.x);
