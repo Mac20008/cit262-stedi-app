@@ -311,7 +311,7 @@ elevation: 4}}>
      onPress={ subscription ? _unsubscribe : _subscribe}
       style={styles.button}
     >
-      <Text style={{color:'white', fontSize:20}}>{subscription ? 'Add step' : 'Go'}</Text>
+      <Text style={{color:'white', fontSize:20}}>{subscription ? 'Stop' : 'Go'}</Text>
      </TouchableOpacity>
 
      </CardContent>
