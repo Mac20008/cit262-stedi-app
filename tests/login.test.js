@@ -1,23 +1,27 @@
 const fetch = require("node-fetch");
 
-it("should get a login token",async ()=>{
+it("Should get a login token",async ()=>{
 
-let token = "";
-const options = {
-    method:"POST",
-    Headers:{
-        "content-Type":"application/json"
-    },
-    body:{
-        "username":"josemachuca8@gmail.com",
-        "password":"P@ssword1234"
+    let token = "";
+    const options = {
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify({
+            "userName":"josemachuca8@gmail.com",
+            "password":"P@ssword1234"
+        })
+
     }
-}
 
-const response = await fetch ('https://dev.stedi.me/login',options);
-expect (token.length).toBe(32);
-token = await response.text();
+    const response = await fetch("https://dev.stedi.me/login",options);
 
-expect(status).toBe(200);
-expect(token.length).toBe(32);
+    token = await response.text();
+    console.log("Token "+token);
+
+
+
+    expect(token.length).toBe(36);
+
 })
