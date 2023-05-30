@@ -19,10 +19,12 @@
     "expo-camera": "~12.2.0",
     "expo-local-authentication": "^13.2.1",
     "expo-sensors": "~11.3.0",
+    "express": "^4.18.2",
     "jest": "^26.6.3",
     "link": "^1.5.0",
     "native-base": "^3.4.7",
     "node-csv": "^0.1.2",
+    "nodemon": "^2.0.22",
     "react": "17.0.2",
     "react-avatar": "^5.0.1",
     "react-d3-speedometer": "^1.0.2",
@@ -60,6 +62,7 @@
     "@babel/core": "~7.9.0"
   },
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "jest",
     "start": "expo start",
     "android": "expo start --android",
